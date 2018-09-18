@@ -1,0 +1,22 @@
+<div class="user-wrapper">
+  <h2 class="mb-5">User info</h2>
+  <!-- <h1>{{ pMessage }}</h1> -->
+  <div class="card mb-3" *ngFor="let regUser of regUsers">
+    <div class="card-header">
+        {{regUser.name}}
+        <small>
+            <a routerLink="/edit/{{regUser.id}}">
+              Edit
+            </a>
+        </small>
+    </div>
+    <div class="card-body">
+      <p class="card-text">Age: {{regUser.age}}</p>
+      <p class="card-text">Gender: {{regUser.gender}}</p>
+      <p class="card-text">Email: {{regUser.email}}</p>
+      <p class="card-text">Phone: {{regUser.phone}}</p>
+      <p class="card-text">Address: {{regUser.address}}</p>
+      <p class="card-text">Notes: {{regUser.notes}}</p>
+    </div>
+  </div>
+</div>

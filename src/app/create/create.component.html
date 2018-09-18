@@ -1,0 +1,45 @@
+<h2 class="mb-5">Add User</h2>
+<div class="form-container">
+  <form [formGroup]="rForm" (ngSubmit)="submitForm(rForm.value)">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" placeholder="What do they call you?" formControlName="name" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" class="form-control" id="age" formControlName="age" placeholder="Age" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <div>
+          <label for="age">Gender</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" id="g1" formControlName="gender" type="radio" value="Male">
+        <label class="form-check-label" for="g1">Male</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" id="g2" formControlName="gender" type="radio" value="Female">
+        <label class="form-check-label" for="g2">Female</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="age">Email</label>
+      <input type="email" class="form-control" formControlName="email" id="email" placeholder="Enter your email id" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label for="age">Phone</label>
+      <input type="number" class="form-control" formControlName="phone" id="phone" placeholder="Enter your phone number" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label for="age">Address</label>
+      <textarea class="form-control" formControlName="address" id="address" placeholder="Enter your full address" autocomplete="off"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="age">Notes</label>
+      <textarea class="form-control" formControlName="note" id="note" placeholder="Anything you want to say" autocomplete="off"></textarea>
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-primary" value="Submit Form">
+    </div>
+  </form>
+</div>
