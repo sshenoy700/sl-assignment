@@ -1,6 +1,6 @@
 <h2 class="mb-5">Edit User</h2>
 <div class="form-container">
-  <form [formGroup]="rForm" (ngSubmit)="submitForm(rForm.value)">
+  <form [formGroup]="rForm">
     <div class="form-group">
       <label for="name">Name</label>
       <input type="text" class="form-control" id="name" placeholder="What do they call you?" formControlName="name" autocomplete="off">
