@@ -4,9 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Backend
 
-All the backend calls will be to http://localhost/sites/formsubmit/[files]
-All the backend files/database are uploaded in a folder called sites
-Database config can be found in a file called connection.php inside sites
+All the backend calls will be to http://localhost/sites/formsubmit/[files].
+All the backend files/database are uploaded in a folder called sites.
+Database config can be found in a file called connection.php inside sites.
 
 ## Development server
 
